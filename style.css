@@ -76,6 +76,7 @@ display:flex;
 width:100%;
 height:90vh;
 background:url("images/back.jpg")center;
+background-repeat:no-repeat;
 color:white;
 }
 
@@ -180,8 +181,8 @@ width:55%;
 }
 
 .about .abt .column-right .text1 {
-font-size:30px;
-font-weight:300;
+font-size:50px;
+font-weight:500;
 margin:auto;
 }
 
@@ -208,8 +209,8 @@ background:none;
 color:crimson;
 text-decoration:none;
 transition:0.2s;
-}
 
+}
 .about .abt .column-right .text1 span{
 color:crimson;
 }
@@ -303,7 +304,7 @@ font-weight:500;
 
 
 
-@media only screen and (max-width:786px){
+@media only screen and (max-width:880px){
 	.navbar {
 	background:black;
 	padding:8px 20px;
@@ -353,7 +354,16 @@ font-weight:500;
 	.home .text-3{
 	font-size:28px;
 	}
+	.about .abt .column-left{
+	width:45%;
+	}
+
+	.about .abt .column-right{
+	width:55%;
+	margin:auto;
+	}
 	.about .abt .column-left {
+	width:45%;
 	display:flex;
 	justify-content:center;
 	margin:0 auto 60px auto ;
