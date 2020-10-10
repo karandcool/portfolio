@@ -1,200 +1,401 @@
-body{
-background-color:white;
-font-family:poppins;
+* {
+text-decoration:none;
+margin:0;
+padding:0;
+//box-sizing:border-box;
 }
 
-header{
-background-color:rgba(0,0,0,0.9);
+html{
+scroll-behavior: smooth;
+overflow-y:scroll;
+}
+
+.navbar {
 width:100%;
-height:50px;
 position:fixed;
-display:flex;
-justify-content:space-around;
-align-items:center;
-z-index:5;
-}
-
-}
-
-nav ul {
-list-style:none;
-}
-nav ul li {
-display:inline-block;
-padding:0px 25px;
-}
-nav ul li a {
-text-decoration:none;
+background:none;
 color:white;
-}
-
-nav ul li a:hover {
-color:red;
+z-index:999;
 transition:0.4s;
-//background-color:black;
-text-decoration:none;
-border-radius:8px;
 }
 
-/*
-nav ul li a:hover {
-text-decoration:none;
-color: white;
-background:red;
-border-radius:10px;
-transition:0.7s;
-//z-index:5;
+.navbar.sticky{
+//height:50px;
+//padding:12px 0;
+background:crimson;
+transition:0.4s;
+}
+.head li{
+display:inline-block;
+padding:5px 30px;
 }
 
-section{
+.navbar .logo a{
+color:white;
+font-size:25px;
+padding-left:15px;
+//cursor:none;
+}
+
+.navbar.sticky .logo a span{
+color:black;
+}
+.navbar .logo a span{
+color:crimson;
+}
+
+.navbar .menu li a {
+color:white;
+display:block;
+font-size:18px;
+}
+
+.navbar .logo a:hover, .navbar .menu li a:hover{
+text-decoration:none;
+
+}
+
+.navbar .menu li a:hover{
+color:crimson;
+transition:0.3s;
+}
+
+.navbar.sticky .menu li a:hover{
+color:black;
+}
+
+.head .menu_btn {
+margin:0 20px 0 auto;
+font-size:25px;
+display:none;
+cursor:pointer;
+}
+
+.home {
+display:flex;
 width:100%;
-height:100vh;
-background: url('images/port.jpg');
-background-size:cover;
-background-postion:center;
-}
-*/
-
-.naming {
-padding-top:40vh;
-color:black;
-font-size:40px;
-//font-weight:bold;
-
-}
-
-span {
-color:red;
-}
-
-.sub-name {
-color:black;
-}
-
-.parallax {
-  /* The image used */
-  background-image: url('images/port.jpg');
-
-  /* Set a specific height */
-  height: 500px;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height:100vh;
-}
-
-.card{
-background-color:white;
-color:black;
-margin: auto;
-//padding:10px 10px;
-text-align:center;
-//transform:translateY(100px);
-transform:scale(.7);
-box-shadow: 0 20px 50px rgba(0,0,0,0.8)
-
-}
-
-.card h5 {
-font-size:1.3em;
-}
-.card img {
-margin-top:20px;
-box-shadow: 0 20px 50px rgba(0,0,0,0.8)
-}
-
- 
-.card:hover {
-background:linear-gradient(45deg,#036eb7,#64eaff,#E91E63,#ed55ff,#086d35,#00ff72);
-//color:black;
-transform:scale(1);
-transition:0.8s;
-}
-.card-body a {
-background-color:brown;
-}
-
-.card-body a:hover{
-background-color:black;
+height:90vh;
+background:url("images/back.jpg")center;
 color:white;
 }
 
+.home .name{
+margin:150px 0 50px 30px;
+}
+.home .text-1 {
+font-size:25px;
+}
 
-.row{
-padding:10px 10px;
+.home .text-2{
+font-size:50px;
+font-weight:500;
+color:black;
+}
+.home .text-3{
+font-size:40px;
 }
 
 
-.parallax2 {
-  /* The image used */
-  background-image: url('images/port.jpg');
+.home .text-3 span{
+color:crimson;
 
-  /* Set a specific height */
-  height: 500px;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height:50%;
-  width:100%;
+}
+.home .name a{
+display:inline-block;
+background:crimson;
+color:white;
+font-size:15px;
+padding:10px 30px;
+margin-top:30px;
+border-radius:6px;
+border:2px solid crimson;
 }
 
+.home .name a:hover{
+background:none;
+text-decoration:none;
+transition:0.2s;
+}
+.about {
+font-family:'poppins',sans-serif;
+}
+
+section {
+padding:50px 0;
+}
+
+.about .title{
+position:relative;
+text-align:center;
+font-size:40px;
+font-weight:500;
+margin-bottom:60px;
+padding-bottom:20px;
+font-family: 'ubuntu',sans-serif;
+}
+
+.about .title::before {
+content:"";
+position:absolute;
+bottom:0px;
+left:50%;
+width:180px;
+height:2px;
+background:black;
+transform:translateX(-50%);
+}
+
+.about .title::after {
+content:"who i am";
+position:absolute;
+bottom:-7px;
+left:50%;
+font-size:15px;
+color:crimson;
+padding:5px;
+background:white;
+transform:translateX(-50%);
+}
+
+.about .abt .column-left img{
+height:400px;
+width:300px;
+//object-fit:cover;
+border-radius:6px;
+margin-right:40px;
+}
 .abt {
-margin-top:20px;
-text-transform:uppercase;
-//font-size:10px;
-padding 10px 10px;
+display:flex;
+flex-wrap:wrap;
+align-items:center;
+justify-content:space-between;
 }
 
+.about .abt .column-left{
+width:45%;
+}
 
-.about{
+.about .abt .column-right{
+width:55%;
+}
+
+.about .abt .column-right .text1 {
+font-size:30px;
+font-weight:300;
+margin:auto;
+}
+
+.about .abt .column-right p{
+font-size:20px;
+margin-bottom:20px;
+}
+
+.about .abt .column-right a{
+//display:inline-block;
+//margin:0 auto 0 auto;
+text-align:center;
+background:crimson;
+color:white;
+font-size:15px;
+padding:10px 30px;
+//margin-top:20px;
+border-radius:6px;
+border:2px solid crimson;
+}
+
+.about .abt .column-right a:hover{
+background:none;
+color:crimson;
+text-decoration:none;
+transition:0.2s;
+}
+
+.about .abt .column-right .text1 span{
+color:crimson;
+}
+.skills {
 width:100%;
-height:70%;
-margin-top:50px;
+height:100%;
+background-color:black;
 }
 
-.abtme p {
-letter-spacing:0.2em;
-word-spacing:0.6em;
+.skills .skl{
+text-align:center;
+color:white;
+padding-bottom:20px;
+}
+
+.skills .skl span{
+color:crimson;
+}
+
+.skills .card {
+margin:auto;
+//padding-bottom:50px;
+text-align:center;
+height:400px;
+width:100%;
+
+}
+.skills .card img{
+width:100%;
+height:150px;
+}
+.skills .card-title {
+color:crimson;
+}
+.skills .card p{
+height:180px;
+font-size:14px;
+overflow-y:scroll;
 }
 
 
+.bar span{
+color:crimson;
+}
 
-.aboutpic {
-width:50%;
-height:70%;
-margin-left:25%;
-//margin-right:40%;
-border-radius:50%;
-box-shadow: 0 40px 80px rgba(0,0,0,0.8)
+.bar {
+text-align:center;
+paddding:30px 0;
+background:white;
+}
+
+.bar .heading {
+padding:30px 0;
+color:black;
 }
 
 .progress {
-margin-top:50px;
-//width:50%;
-items-align:center;
-background-color:black;
-}
-.first {
-color:red;
+height:20px;
+background-color:rgba(0,0,0,0.2);
+margin-bottom:40px;
 }
 
-#Contact {
-background:black;
+.progress .left{
+text-align:left;
+margin:15px auto 0 3px;
+color:black;
+font-weight:600;
 }
 
-#Contact h3 {
-color:white;
-padding-top:30px;
-padding-bottom:20px;
-	
+.progress .ryt{
+text-align:right;
+color:black;
+font-weight:600;
+margin-right:10px;
 }
 
+.contact {
+width:100%;
+height:90%;
+background-color:rgba(0,0,0,0.7);
+}
+
+.contact span{
+color:crimson;
+}
 .contactme {
 text-align:center;
+font-size:20px;
+font-weight:500;
 }
+
+
+
+@media only screen and (max-width:786px){
+	.navbar {
+	background:black;
+	padding:8px 20px;
+	}	
+
+	.navbar .menu{
+	position:fixed;
+	width:100%;
+	height:100vh;
+	background:black;
+	top:0;
+	right:-100%;
+	text-align:center;
+	padding-top:80px;
+	margin-top:50px;
+	transition:0.5s;
+	}
+	.navbar .menu.start{
+	right:0;
+	}
+	.navbar .menu li {
+	display:block;
+	}
+	.navbar .menu li a{
+	display:inline-block;
+	margin:20px 0;
+	}
+	.navbar .menu li a:hover {
+	color:crimson;
+	}
+	.navbar .menu_btn {
+	display:block;
+	z-index:999;
+	}
+	.navbar.sticky .menu li a:hover{
+	color:white;
+	}
+	.home .text-1 {
+	font-size:18px;
+	}
+
+	.home .text-2{
+	font-size:35px;
+	font-weight:500;
+	color:black;
+	}
+	.home .text-3{
+	font-size:28px;
+	}
+	.about .abt .column-left {
+	display:flex;
+	justify-content:center;
+	margin:0 auto 60px auto ;
+	}
+	
+	.about .abt .column-right .text1 p{
+	justify-content:center;
+	text-align:center;
+	//font-size:15px;
+	margin:50px auto 60px 100px;
+	flex:100%;
+	}
+	.about .abt .column-left img{
+	height:200px;
+	width:200px;
+	//margin-left:20px;
+	margin-right:20px;
+	}
+	.home .name a{
+	display:inline-block;
+	background:crimson;
+	color:white;
+	font-size:12px;
+	padding:8px 22px;
+	margin-top:15px;
+	border-radius:6px;
+	border:2px solid crimson;
+}	
+
+	.abt {
+	display:flex;
+	flex-wrap:wrap;
+	}
+	.about .abt .column-right .text1 {
+font-size:20px;
+font-weight:200;
+margin-bottom:10px;
+}
+
+.about .abt .column-right p{
+font-size:15px;
+margin-bottom:20px;
+}
+
+
