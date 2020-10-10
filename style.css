@@ -362,15 +362,16 @@ font-weight:500;
 	.about .abt .column-right .text1 p{
 	justify-content:center;
 	text-align:center;
-	//font-size:15px;
-	margin:50px auto 60px 100px;
+	font-size:15px;
+	margin:50px auto 60px 160px;
 	flex:100%;
 	}
 	.about .abt .column-left img{
 	height:200px;
 	width:200px;
 	//margin-left:20px;
-	margin-right:20px;
+	margin:0 auto 0 auto;
+	//margin-right:50px;
 	}
 	.home .name a{
 	display:inline-block;
