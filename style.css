@@ -373,12 +373,12 @@ font-weight:500;
 	justify-content:center;
 	text-align:center;
 	font-size:15px;
-	margin:50px auto 60px 160px;
+	margin:50px 10px 60px auto;
 	flex:100%;
 	}
 	.about .abt .column-left img{
 	height:200px;
-	width:200px;
+	width:160px;
 	margin-left:20px;
 	//margin:0 auto 0 auto;
 	margin-right:50px;
