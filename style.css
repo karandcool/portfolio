@@ -379,9 +379,9 @@ font-weight:500;
 	.about .abt .column-left img{
 	height:200px;
 	width:200px;
-	//margin-left:20px;
-	margin:0 auto 0 auto;
-	//margin-right:50px;
+	margin-left:20px;
+	//margin:0 auto 0 auto;
+	margin-right:50px;
 	}
 	.home .name a{
 	display:inline-block;
